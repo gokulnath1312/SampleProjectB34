@@ -32,7 +32,8 @@ public class SeleniumDragandDrop {
 		
 		WebElement drop=driver.findElement(By.id("droppable"));
 		action.moveToElement(drop).perform();
-				action.dragAndDrop(drag, drop).build().perform();
+		action.clickAndHold(drag).moveToElement(drop).release(drop).build().perform();
+			//	action.dragAndDrop(drag, drop).build().perform();
 		
 		Thread.sleep(2000);
 		
