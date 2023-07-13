@@ -22,7 +22,7 @@ public class SeleniumActionDemo {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 //		driver.get("https://www.google.com/");
-		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.get("https://demo.opencart.com/");
 		Actions action = new Actions(driver);
 WebElement searchbox=driver.findElement(By.id("search"));
 		searchbox.sendKeys("Phone");

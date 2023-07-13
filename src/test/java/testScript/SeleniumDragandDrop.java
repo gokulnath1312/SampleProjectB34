@@ -22,7 +22,8 @@ public class SeleniumDragandDrop {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 //		driver.get("https://www.google.com/");
-		driver.get("https://demo.opencart.com/");
+		driver.get("https://testautomationpractice.blogspot.com/");
+		
 		Actions action = new Actions(driver);
 		
 		
