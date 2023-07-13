@@ -24,12 +24,15 @@ public class SeleniumDragandDrop {
 //		driver.get("https://www.google.com/");
 		driver.get("https://demo.opencart.com/");
 		Actions action = new Actions(driver);
-		WebElement searchbox=driver.findElement(By.id("search"));
 		
-		WebElement menu=driver.findElement(By.cssSelector("ul.nav.navbar-nav>li:nth-child(3)"));
-		WebElement submenu=driver.findElement(By.cssSelector("ul.nav.navbar-nav>li:nth-child(3)>div>div>ul>li:nth-child(2)"));
 		
-		action.moveToElement(menu).click(submenu).build().perform();
+
+		WebElement drag=driver.findElement(By.id("draggable"));
+		
+		WebElement drop=driver.findElement(By.id("droppable"));
+		action.moveToElement(drop).perform();
+				action.dragAndDrop(drag, drop).build().perform();
+		
 		Thread.sleep(2000);
 		
 //		WebElement schBox = driver.findElement(By.name("q"));

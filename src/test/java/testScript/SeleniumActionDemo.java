@@ -24,8 +24,8 @@ public class SeleniumActionDemo {
 //		driver.get("https://www.google.com/");
 		driver.get("https://testautomationpractice.blogspot.com/");
 		Actions action = new Actions(driver);
-		WebElement searchbox=driver.findElement(By.id("search"));
-		
+WebElement searchbox=driver.findElement(By.id("search"));
+		searchbox.sendKeys("Phone");
 		WebElement menu=driver.findElement(By.cssSelector("ul.nav.navbar-nav>li:nth-child(3)"));
 		WebElement submenu=driver.findElement(By.cssSelector("ul.nav.navbar-nav>li:nth-child(3)>div>div>ul>li:nth-child(2)"));
 		
