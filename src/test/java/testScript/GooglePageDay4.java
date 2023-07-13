@@ -41,6 +41,7 @@ public class GooglePageDay4 {
 				break;
 			}
 		}
+		driver.quit();
 
 	}
 
